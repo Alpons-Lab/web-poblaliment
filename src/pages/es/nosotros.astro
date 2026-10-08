@@ -1,0 +1,31 @@
+---
+import PageIntro from '../../components/PageIntro.astro';
+import { content } from '../../data/content';
+import Layout from '../../layouts/Layout.astro';
+
+const locale = 'es';
+const copy = content[locale].about;
+---
+
+<Layout locale={locale} title={copy.title} description={copy.description}>
+  <PageIntro
+    heading={copy.heading}
+    intro={copy.intro}
+    image="/images/about.jpg"
+    imageAlt={copy.imageAlt}
+    imageCaption={copy.imageCaption}
+  />
+  <section class="page-frame py-8 sm:py-12">
+    <div class="grid gap-8 border-t rule pt-6 sm:grid-cols-[0.65fr_1.35fr]">
+      <h2 class="display text-4xl sm:text-5xl">{copy.valuesTitle}</h2>
+      <div>
+        {copy.values.map((value) => (
+          <article class="grid gap-3 border-b rule py-6 sm:grid-cols-[0.7fr_1.3fr]">
+            <h3 class="display text-3xl">{value.title}</h3>
+            <p class="max-w-xl text-[var(--color-ink-soft)]">{value.body}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Poblaliment, inici" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Poblaliment" [ref=e5]
+        - generic [ref=e6]: POBLALIMENT
+      - navigation "Navegació principal" [ref=e7]:
+        - link "Inici" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "Nosaltres" [ref=e9] [cursor=pointer]:
+          - /url: /nosaltres
+        - link "Les nostres marques" [ref=e10] [cursor=pointer]:
+          - /url: /marques
+        - link "Contacte" [ref=e11] [cursor=pointer]:
+          - /url: /contacte
+      - generic "Idioma" [ref=e12]:
+        - generic [ref=e13]: CA
+        - generic [ref=e14]: /
+        - link "ES" [ref=e15] [cursor=pointer]:
+          - /url: /es/
+  - main [ref=e16]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Producte, territori i servei." [level=1] [ref=e20]
+        - paragraph [ref=e21]: Aquest és el nostre espai per explicar qui som, què posem en moviment i amb quines marques caminem.
+        - generic [ref=e22]:
+          - link "Coneix-nos" [ref=e23] [cursor=pointer]:
+            - /url: /nosaltres
+          - link "Parlem" [ref=e24] [cursor=pointer]:
+            - /url: /contacte
+            - text: Parlem ↗
+      - figure "La distribució també forma part del producte." [ref=e26]:
+        - img "Camió de Poblaliment repartint producte al capvespre" [ref=e27]
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - heading "Els nostres serveis" [level=2] [ref=e32]
+        - paragraph [ref=e33]: Els nostres serveis garanteixen qualitat, confiança i una distribució eficient per als nostres clients.
+      - generic [ref=e34]:
+        - article [ref=e35]:
+          - heading "Distribució local i nacional" [level=3] [ref=e36]
+          - paragraph [ref=e37]: Oferim servei de distribució per tot el territori pirinenc i català, garantint puntualitat, cura i proximitat.
+        - article [ref=e38]:
+          - heading "Logística i emmagatzematge" [level=3] [ref=e39]
+          - paragraph [ref=e40]: Disposem d’un servei logístic propi i col·laboracions amb operadors especialitzats per assegurar un transport eficient i en les millors condicions de conservació.
+        - article [ref=e41]:
+          - heading "Atenció personalitzada" [level=3] [ref=e42]
+          - paragraph [ref=e43]: Creiem en el tracte directe i la confiança. Ens adaptem a les necessitats de cada client per oferir un servei àgil, transparent i de qualitat.
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - heading "Explora Poblaliment" [level=2] [ref=e46]
+        - generic [ref=e47]: Poblaliment / 2026
+      - generic [ref=e48]:
+        - link "Nosaltres La base del projecte" [ref=e49] [cursor=pointer]:
+          - /url: /nosaltres
+          - generic [ref=e50]: Nosaltres
+          - generic [ref=e51]: La base del projecte
+          - generic [aria-hidden] [ref=e52]: →
+        - link "Proveïdors Les marques que ens acompanyen" [ref=e53] [cursor=pointer]:
+          - /url: /marques
+          - generic [ref=e54]: Proveïdors
+          - generic [ref=e55]: Les marques que ens acompanyen
+          - generic [aria-hidden] [ref=e56]: →
+        - link "Contacte Obrim una conversa" [ref=e57] [cursor=pointer]:
+          - /url: /contacte
+          - generic [ref=e58]: Contacte
+          - generic [ref=e59]: Obrim una conversa
+          - generic [aria-hidden] [ref=e60]: →
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Una mirada al nostre dia a dia" [level=2] [ref=e63]
+        - generic [ref=e64]: Imatges de suport · galeria preparada per ampliar
+      - generic [ref=e65]:
+        - figure "Camió de Poblaliment en ruta al capvespre" [ref=e67]:
+          - img "Camió de Poblaliment en ruta al capvespre" [ref=e68]
+        - figure "Camió de Poblaliment en una carretera de muntanya" [ref=e71]:
+          - img "Camió de Poblaliment en una carretera de muntanya" [ref=e72]
+        - figure "Espai de distribució de Poblaliment" [ref=e75]:
+          - img "Espai de distribució de Poblaliment" [ref=e76]
+    - generic [ref=e79]:
+      - heading "Tens una pregunta o una proposta?" [level=2] [ref=e80]
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: Escriu-nos i prepararem el següent pas.
+        - link "Anar a contacte" [ref=e83] [cursor=pointer]:
+          - /url: /contacte
+          - text: Anar a contacte ↗
+  - contentinfo [ref=e84]:
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - link "Producte, origen i criteri." [ref=e87] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e88]: © Poblaliment · web en construcció
+      - link "Contacte" [ref=e89] [cursor=pointer]:
+        - /url: /contacte
+  - generic [ref=e92]:
+    - button [ref=e93]
+    - button [ref=e99]
+    - button [ref=e103]
+    - button [ref=e108]

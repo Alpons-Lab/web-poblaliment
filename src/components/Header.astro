@@ -1,0 +1,97 @@
+---
+import { content } from '../data/content';
+import { localizedPath, type Locale } from '../lib/i18n';
+import SiteImage from './SiteImage.astro';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const copy = content[locale];
+const otherLocale = locale === 'ca' ? 'es' : 'ca';
+const currentPath = Astro.url.pathname;
+const normalizePath = (path: string) => (path.length > 1 ? path.replace(/\/$/, '') : path);
+const activePage =
+  copy.nav.find(
+    (item) => normalizePath(localizedPath(locale, item.page)) === normalizePath(currentPath),
+  )?.page ?? 'home';
+---
+
+<header class="site-header border-b rule">
+  <div class="page-frame flex items-center justify-between gap-6 py-5">
+    <a
+      href={localizedPath(locale, 'home')}
+      class="brand-lockup flex items-center gap-3 no-underline"
+      aria-label={locale === 'ca' ? 'Poblaliment, inici' : 'Poblaliment, inicio'}
+    >
+      <SiteImage
+        src="/images/logo.jpg"
+        alt="Poblaliment"
+        class="h-11 w-11 rounded-full object-cover"
+        loading="eager"
+      />
+      <span class="brand-wordmark">
+        <span
+          class="hidden text-sm font-semibold tracking-[0.14em] text-[var(--color-blue)] sm:inline"
+        >
+          POBLALIMENT
+        </span>
+        <span
+          class="brand-context hidden text-[0.62rem] font-semibold tracking-[0.12em] text-[var(--color-ink-soft)] lg:block"
+        >
+          DISTRIBUCIÓ ALIMENTÀRIA
+        </span>
+      </span>
+    </a>
+
+    <nav
+      aria-label={locale === 'ca' ? 'Navegació principal' : 'Navegación principal'}
+      class="hidden items-center gap-6 md:flex"
+    >
+      {copy.nav.map((item) => (
+        <a
+          href={localizedPath(locale, item.page)}
+          class:list={[
+            'nav-link text-sm no-underline transition-colors hover:text-[var(--color-orange)]',
+            activePage === item.page
+              ? 'font-semibold text-[var(--color-ink)]'
+              : 'text-[var(--color-ink-soft)]',
+          ]}
+          aria-current={activePage === item.page ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <nav class="flex items-center gap-2 text-xs font-bold tracking-[0.14em]" aria-label="Idioma">
+      <span class="text-[var(--color-green)]">{copy.localeLabel}</span>
+      <span class="text-[var(--color-ink-soft)]">/</span>
+      <a
+        class="text-[var(--color-ink-soft)] no-underline hover:text-[var(--color-orange)]"
+        href={localizedPath(otherLocale, activePage)}
+      >
+        {copy.otherLocaleLabel}
+      </a>
+    </nav>
+  </div>
+
+  <nav
+    aria-label={locale === 'ca' ? 'Navegació mòbil' : 'Navegación móvil'}
+    class="page-frame mobile-nav flex gap-5 overflow-x-auto pb-4 md:hidden"
+  >
+    {copy.nav.map((item) => (
+      <a
+        href={localizedPath(locale, item.page)}
+        class:list={[
+          'shrink-0 text-sm no-underline',
+          activePage === item.page ? 'font-semibold' : 'text-[var(--color-ink-soft)]',
+        ]}
+        aria-current={activePage === item.page ? 'page' : undefined}
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
+</header>

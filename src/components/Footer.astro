@@ -1,0 +1,33 @@
+---
+import { content } from '../data/content';
+import { localizedPath, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const copy = content[locale];
+---
+
+<footer class="mt-24 border-t rule">
+  <div
+    class="page-frame flex flex-col gap-5 py-8 text-sm text-[var(--color-ink-soft)] sm:flex-row sm:items-end sm:justify-between"
+  >
+    <div>
+      <a
+        href={localizedPath(locale, 'home')}
+        class="display text-2xl text-[var(--color-ink)] no-underline"
+      >
+        {copy.footer.statement}
+      </a>
+      <p class="mt-2 text-xs">{copy.footer.legal}</p>
+    </div>
+    <a
+      href={localizedPath(locale, 'contact')}
+      class="font-semibold text-[var(--color-blue)] underline decoration-[var(--color-orange)] decoration-2 underline-offset-4"
+    >
+      {copy.nav[3].label}
+    </a>
+  </div>
+</footer>

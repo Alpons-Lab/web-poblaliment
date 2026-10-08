@@ -1,0 +1,75 @@
+---
+import PageIntro from '../../components/PageIntro.astro';
+import SupplierMark from '../../components/SupplierMark.astro';
+import { content } from '../../data/content';
+import { supplierCategories, suppliers } from '../../data/suppliers';
+import Layout from '../../layouts/Layout.astro';
+
+const locale = 'es';
+const copy = content[locale].brands;
+---
+
+<Layout locale={locale} title={copy.title} description={copy.description}>
+  <PageIntro
+    heading={copy.heading}
+    intro={copy.intro}
+    image="/images/products.jpg"
+    imageAlt={copy.imageAlt}
+    imageCaption={copy.imageCaption}
+    compact
+  />
+  <section class="page-frame pb-8 sm:pb-16">
+    <p class="eyebrow border-b rule pb-4">{copy.note}</p>
+    <nav class="supplier-jump-links" aria-label="Categorías de proveedores">
+      {supplierCategories.map((category, index) => (
+        <a href={`#categoria-${index}`}>
+          {suppliers.find((supplier) => supplier.category === category)?.categoryEs}
+        </a>
+      ))}
+    </nav>
+    <section class="supplier-group" id="principals">
+      <h2 class="display supplier-group-title">Marcas principales</h2>
+      <div class="supplier-directory">
+        {suppliers
+          .filter((supplier) => supplier.principal)
+          .map((supplier) => (
+            <article class="supplier-directory-row">
+              <SupplierMark supplier={supplier} />
+              <h3 class="display">{supplier.name}</h3>
+              {supplier.website ? (
+                <a href={supplier.website} target="_blank" rel="noopener noreferrer">
+                  Visitar web <span aria-hidden="true">↗</span>
+                </a>
+              ) : (
+                <span>Web pendiente de confirmar</span>
+              )}
+            </article>
+          ))}
+      </div>
+    </section>
+    {supplierCategories.map((category, index) => (
+      <section class="supplier-group" id={`categoria-${index}`}>
+        <h2 class="display supplier-group-title">
+          {suppliers.find((supplier) => supplier.category === category)?.categoryEs}
+        </h2>
+        <div class="supplier-directory">
+          {suppliers
+            .filter((supplier) => supplier.category === category)
+            .map((supplier) => (
+              <article class="supplier-directory-row">
+                <SupplierMark supplier={supplier} />
+                <h3 class="display">{supplier.name}</h3>
+                {supplier.website ? (
+                  <a href={supplier.website} target="_blank" rel="noopener noreferrer">
+                    Visitar web <span aria-hidden="true">↗</span>
+                  </a>
+                ) : (
+                  <span>Web pendiente de confirmar</span>
+                )}
+              </article>
+            ))}
+        </div>
+      </section>
+    ))}
+  </section>
+</Layout>

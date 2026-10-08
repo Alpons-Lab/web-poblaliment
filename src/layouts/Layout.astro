@@ -1,0 +1,102 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import { getPageFromPath, localizedPath, type Locale, type PageKey } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  page?: PageKey;
+  noindex?: boolean;
+}
+
+const { locale, title, description, page: pageProp, noindex = false } = Astro.props;
+const page = pageProp ?? getPageFromPath(Astro.url.pathname);
+const siteOrigin = (Astro.site?.origin ?? Astro.url.origin).replace(/\/$/, '');
+const canonicalUrl = new URL(localizedPath(locale, page), `${siteOrigin}/`).href;
+const alternateUrls = {
+  ca: new URL(localizedPath('ca', page), `${siteOrigin}/`).href,
+  es: new URL(localizedPath('es', page), `${siteOrigin}/`).href,
+};
+const socialImagePath =
+  page === 'about'
+    ? '/images/about.jpg'
+    : page === 'brands'
+      ? '/images/products.jpg'
+      : page === 'contact'
+        ? '/images/contact.jpg'
+        : '/images/truck-sunset.jpg';
+const socialImageUrl = new URL(socialImagePath, `${siteOrigin}/`).href;
+const logoUrl = new URL('/images/logo.jpg', `${siteOrigin}/`).href;
+const organizationId = `${siteOrigin}/#organization`;
+const websiteId = `${siteOrigin}/#website`;
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': organizationId,
+      name: 'Poblaliment',
+      url: siteOrigin,
+      logo: logoUrl,
+    },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: 'Poblaliment',
+      url: siteOrigin,
+      inLanguage: locale,
+    },
+    {
+      '@type': 'WebPage',
+      '@id': `${canonicalUrl}#webpage`,
+      url: canonicalUrl,
+      name: title,
+      description,
+      inLanguage: locale,
+      isPartOf: { '@id': websiteId },
+      about: { '@id': organizationId },
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content={description}>
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'}>
+    <meta name="theme-color" content="#f5f1e8">
+    {!noindex && <link rel="canonical" href={canonicalUrl} />}
+    {!noindex && <link rel="alternate" hreflang="ca" href={alternateUrls.ca} />}
+    {!noindex && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Poblaliment">
+    <meta property="og:locale" content={locale === 'ca' ? 'ca_ES' : 'es_ES'}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:url" content={canonicalUrl}>
+    <meta property="og:image" content={socialImageUrl}>
+    <meta property="og:image:alt" content="Vehicle de distribució de Poblaliment al territori">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={socialImageUrl}>
+    <meta name="twitter:image:alt" content="Vehicle de distribució de Poblaliment al territori">
+    <link rel="icon" href="/images/logo.jpg">
+    <link rel="sitemap" href="/sitemap-index.xml">
+    <title>{title}</title>
+    {!noindex && <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
+  </head>
+  <body>
+    <Header locale={locale} />
+    <main>
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>

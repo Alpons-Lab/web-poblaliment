@@ -1,0 +1,127 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "Poblaliment, inici" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - img "Poblaliment" [ref=f3e5]
+        - generic [ref=f3e6]:
+          - generic [ref=f3e7]: POBLALIMENT
+          - generic [ref=f3e8]: DISTRIBUCIÓ ALIMENTÀRIA
+      - navigation "Navegació principal" [ref=f3e9]:
+        - link "Inici" [ref=f3e10] [cursor=pointer]:
+          - /url: /
+        - link "Nosaltres" [ref=f3e11] [cursor=pointer]:
+          - /url: /nosaltres
+        - link "Les nostres marques" [ref=f3e12] [cursor=pointer]:
+          - /url: /marques
+        - link "Contacte" [ref=f3e13] [cursor=pointer]:
+          - /url: /contacte
+      - generic "Idioma" [ref=f3e14]:
+        - generic [ref=f3e15]: CA
+        - generic [ref=f3e16]: /
+        - link "ES" [ref=f3e17] [cursor=pointer]:
+          - /url: /es/
+  - main [ref=f3e18]:
+    - generic [ref=f3e20]:
+      - generic [ref=f3e21]:
+        - heading "Producte, territori i servei." [level=1] [ref=f3e22]
+        - paragraph [ref=f3e23]: Aquest és el nostre espai per explicar qui som, què posem en moviment i amb quines marques caminem.
+        - generic [ref=f3e24]:
+          - link "Coneix-nos" [ref=f3e25] [cursor=pointer]:
+            - /url: /nosaltres
+          - link "Parlem" [ref=f3e26] [cursor=pointer]:
+            - /url: /contacte
+            - text: Parlem ↗
+        - paragraph [ref=f3e27]: Producte, territori i servei per fer visible allò que arriba cada dia.
+      - generic [ref=f3e29]:
+        - figure "La distribució també forma part del producte." [ref=f3e31]:
+          - img "Camió de Poblaliment repartint producte al capvespre" [ref=f3e32]
+        - generic [aria-hidden] [ref=f3e34]: 01 / 04
+    - generic [ref=f3e36]:
+      - heading "Una distribució que es fa visible." [level=2] [ref=f3e37]
+      - paragraph [ref=f3e38]: Posem en moviment productes, marques i relacions perquè arribin amb criteri, proximitat i una manera clara de fer.
+    - generic [ref=f3e39]:
+      - generic [ref=f3e40]:
+        - heading "Servei que es nota." [level=2] [ref=f3e41]
+        - paragraph [ref=f3e42]: Els nostres serveis garanteixen qualitat, confiança i una distribució eficient per als nostres clients.
+      - generic [ref=f3e43]:
+        - article [ref=f3e44]:
+          - heading "Distribució local i nacional" [level=3] [ref=f3e45]
+          - paragraph [ref=f3e46]: Oferim servei de distribució per tot el territori pirinenc i català, garantint puntualitat, cura i proximitat.
+          - generic [aria-hidden] [ref=f3e47]: ↗
+        - article [ref=f3e48]:
+          - heading "Logística i emmagatzematge" [level=3] [ref=f3e49]
+          - paragraph [ref=f3e50]: Disposem d’un servei logístic propi i col·laboracions amb operadors especialitzats per assegurar un transport eficient i en les millors condicions de conservació.
+          - generic [aria-hidden] [ref=f3e51]: ↗
+        - article [ref=f3e52]:
+          - heading "Atenció personalitzada" [level=3] [ref=f3e53]
+          - paragraph [ref=f3e54]: Creiem en el tracte directe i la confiança. Ens adaptem a les necessitats de cada client per oferir un servei àgil, transparent i de qualitat.
+          - generic [aria-hidden] [ref=f3e55]: ↗
+    - generic [ref=f3e57]:
+      - generic [ref=f3e58]:
+        - generic [ref=f3e59]:
+          - paragraph [ref=f3e60]: Producte i origen
+          - heading "Marques que donen forma al recorregut." [level=2] [ref=f3e61]
+        - generic [ref=f3e62]:
+          - paragraph [ref=f3e63]: Una selecció de marques i proveïdors que expliquen el nostre catàleg des del producte real.
+          - link "Veure totes les marques" [ref=f3e64] [cursor=pointer]:
+            - /url: /marques
+            - text: Veure totes les marques
+            - generic [aria-hidden] [ref=f3e65]: ↗
+      - generic [ref=f3e66]:
+        - link "01 Selecció de cerveses Moritz Moritz Cerveses" [ref=f3e67] [cursor=pointer]:
+          - /url: /marques
+          - generic [ref=f3e68]: "01"
+          - img "Selecció de cerveses Moritz" [ref=f3e70]
+          - generic [ref=f3e71]:
+            - strong [ref=f3e72]: Moritz
+            - generic [ref=f3e73]: Cerveses
+          - generic [aria-hidden] [ref=f3e74]: ↗
+        - link "02 Llaunes Pigäl sobre una taula Pigäl Cerveses artesanes" [ref=f3e75] [cursor=pointer]:
+          - /url: /marques
+          - generic [ref=f3e76]: "02"
+          - img "Llaunes Pigäl sobre una taula" [ref=f3e78]
+          - generic [ref=f3e79]:
+            - strong [ref=f3e80]: Pigäl
+            - generic [ref=f3e81]: Cerveses artesanes
+          - generic [aria-hidden] [ref=f3e82]: ↗
+        - link "03 Ampolla de vi blanc Sumarroca Sumarroca Vins i escumosos" [ref=f3e83] [cursor=pointer]:
+          - /url: /marques
+          - generic [ref=f3e84]: "03"
+          - img "Ampolla de vi blanc Sumarroca" [ref=f3e86]
+          - generic [ref=f3e87]:
+            - strong [ref=f3e88]: Sumarroca
+            - generic [ref=f3e89]: Vins i escumosos
+          - generic [aria-hidden] [ref=f3e90]: ↗
+    - generic [ref=f3e91]:
+      - generic [ref=f3e92]:
+        - heading "Una mirada al dia a dia." [level=2] [ref=f3e93]
+        - generic [ref=f3e94]: La distribució també forma part del producte.
+      - generic [ref=f3e95]:
+        - figure "El camí també explica com treballem." [ref=f3e96]:
+          - img "Camió de Poblaliment en ruta al capvespre" [ref=f3e97]
+        - generic [ref=f3e99]:
+          - figure [ref=f3e100]:
+            - img "Camió de Poblaliment en una carretera de muntanya" [ref=f3e101]
+          - figure [ref=f3e102]:
+            - img "Espai de distribució de Poblaliment" [ref=f3e103]
+    - generic [ref=f3e105]:
+      - heading "Tens una pregunta o una proposta?" [level=2] [ref=f3e106]
+      - generic [ref=f3e107]:
+        - paragraph [ref=f3e108]: Escriu-nos i prepararem el següent pas.
+        - link "Anar a contacte" [ref=f3e109] [cursor=pointer]:
+          - /url: /contacte
+          - text: Anar a contacte ↗
+  - contentinfo [ref=f3e110]:
+    - generic [ref=f3e111]:
+      - generic [ref=f3e112]:
+        - link "Producte, origen i criteri." [ref=f3e113] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=f3e114]: © Poblaliment · web en construcció
+      - link "Contacte" [ref=f3e115] [cursor=pointer]:
+        - /url: /contacte
+  - generic [ref=f3e118]:
+    - button [ref=f3e119]
+    - button [ref=f3e125]
+    - button [ref=f3e129]
+    - button [ref=f3e134]

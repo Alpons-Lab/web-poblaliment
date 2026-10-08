@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { localizedPath } from '../lib/i18n';
+---
+
+<Layout
+  locale="ca"
+  title="Pàgina no trobada — Poblaliment"
+  description="La pàgina que busques no existeix."
+  page="home"
+  noindex
+>
+  <section class="page-frame py-24 sm:py-36">
+    <p class="eyebrow">404</p>
+    <h1 class="display mt-4 max-w-3xl text-6xl leading-none sm:text-8xl">
+      Aquesta pàgina no hi és.
+    </h1>
+    <p class="mt-8 max-w-xl text-lg text-[var(--color-ink-soft)]">
+      Torna a l'inici o continua explorant Poblaliment.
+    </p>
+    <a
+      href={localizedPath('ca', 'home')}
+      class="mt-8 inline-block bg-[var(--color-blue)] px-5 py-3 font-semibold text-[var(--color-paper)] no-underline"
+    >
+      Tornar a l'inici
+    </a>
+  </section>
+</Layout>

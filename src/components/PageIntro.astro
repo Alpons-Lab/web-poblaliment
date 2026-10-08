@@ -1,0 +1,40 @@
+---
+import MotionVisual from './MotionVisual';
+import { imageDimensions } from '../lib/images';
+
+interface Props {
+  heading: string;
+  intro: string;
+  image: string;
+  imageAlt: string;
+  imageCaption: string;
+  compact?: boolean;
+}
+
+const { heading, intro, image, imageAlt, imageCaption, compact = false } = Astro.props;
+const dimensions = imageDimensions[image];
+
+if (!dimensions) {
+  throw new Error(`Missing image dimensions for ${image}`);
+}
+---
+
+<section class:list={['page-frame page-intro py-16 sm:py-24', compact ? 'pb-12' : '']}>
+  <div class="hero-grid items-end">
+    <div class="max-w-3xl">
+      <h1 class="display max-w-3xl text-5xl leading-[0.96] sm:text-7xl">{heading}</h1>
+      <p class="mt-8 max-w-xl text-lg leading-relaxed text-[var(--color-ink-soft)] sm:text-xl">
+        {intro}
+      </p>
+    </div>
+    <MotionVisual
+      client:load
+      src={image}
+      alt={imageAlt}
+      caption={imageCaption}
+      width={dimensions.width}
+      height={dimensions.height}
+      className="hero-image page-intro-image"
+    />
+  </div>
+</section>

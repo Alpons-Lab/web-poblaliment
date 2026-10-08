@@ -1,0 +1,22 @@
+---
+import type { Supplier } from '../data/suppliers';
+
+interface Props {
+  supplier: Supplier;
+  class?: string;
+}
+
+const { supplier, class: className = '' } = Astro.props;
+const initial = supplier.name.trim().charAt(0).toLocaleUpperCase('ca');
+const favicon = supplier.website
+  ? `https://www.google.com/s2/favicons?domain=${new URL(supplier.website).hostname}&sz=128`
+  : undefined;
+---
+
+<span class:list={['supplier-mark', className]} aria-hidden="true">
+  {favicon ? (
+    <img src={favicon} alt="" width="64" height="64" loading="lazy" decoding="async" />
+  ) : (
+    <span>{initial}</span>
+  )}
+</span>

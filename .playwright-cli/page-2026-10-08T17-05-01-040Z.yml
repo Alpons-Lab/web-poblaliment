@@ -1,0 +1,443 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Poblaliment, inici" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Poblaliment" [ref=e5]
+        - generic [ref=e6]:
+          - generic [ref=e7]: POBLALIMENT
+          - generic [ref=e8]: DISTRIBUCIÓ ALIMENTÀRIA
+      - navigation "Navegació principal" [ref=e9]:
+        - link "Inici" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Nosaltres" [ref=e11] [cursor=pointer]:
+          - /url: /nosaltres/
+        - link "Les nostres marques" [ref=e12] [cursor=pointer]:
+          - /url: /marques/
+        - link "Contacte" [ref=e13] [cursor=pointer]:
+          - /url: /contacte/
+      - navigation "Idioma" [ref=e14]:
+        - generic [ref=e15]: CA
+        - generic [ref=e16]: /
+        - link "ES" [ref=e17] [cursor=pointer]:
+          - /url: /es/
+  - main [ref=e18]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - heading "Producte, territori i servei." [level=1] [ref=e22]
+        - paragraph [ref=e23]: Aquest és el nostre espai per explicar qui som, què posem en moviment i amb quines marques caminem.
+        - generic [ref=e24]:
+          - link "Coneix-nos" [ref=e25] [cursor=pointer]:
+            - /url: /nosaltres/
+          - link "Parlem" [ref=e26] [cursor=pointer]:
+            - /url: /contacte/
+            - text: Parlem ↗
+        - paragraph [ref=e27]: Producte, territori i servei per fer visible allò que arriba cada dia.
+      - generic [ref=e29]:
+        - figure "La distribució també forma part del producte." [ref=e31]:
+          - img "Camió de Poblaliment repartint producte al capvespre" [ref=e32]
+        - generic [aria-hidden] [ref=e34]: 01 / 04
+    - generic [ref=e36]:
+      - heading "Una distribució que es fa visible." [level=2] [ref=e37]
+      - paragraph [ref=e38]: Posem en moviment productes, marques i relacions perquè arribin amb criteri, proximitat i una manera clara de fer.
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - heading "Servei que es nota." [level=2] [ref=e41]
+        - paragraph [ref=e42]: Els nostres serveis garanteixen qualitat, confiança i una distribució eficient per als nostres clients.
+      - generic [ref=e43]:
+        - article [ref=e44]:
+          - heading "Distribució local i nacional" [level=3] [ref=e45]
+          - paragraph [ref=e46]: Oferim servei de distribució per tot el territori pirinenc i català, garantint puntualitat, cura i proximitat.
+          - generic [aria-hidden] [ref=e47]: ↗
+        - article [ref=e48]:
+          - heading "Logística i emmagatzematge" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Disposem d’un servei logístic propi i col·laboracions amb operadors especialitzats per assegurar un transport eficient i en les millors condicions de conservació.
+          - generic [aria-hidden] [ref=e51]: ↗
+        - article [ref=e52]:
+          - heading "Atenció personalitzada" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Creiem en el tracte directe i la confiança. Ens adaptem a les necessitats de cada client per oferir un servei àgil, transparent i de qualitat.
+          - generic [aria-hidden] [ref=e55]: ↗
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - paragraph [ref=e60]: Producte i origen
+          - heading "Marques que donen forma al recorregut." [level=2] [ref=e61]
+        - generic [ref=e62]:
+          - paragraph [ref=e63]: Una selecció de marques i proveïdors que expliquen el nostre catàleg des del producte real.
+          - link "Veure totes les marques" [ref=e64] [cursor=pointer]:
+            - /url: /marques/
+            - text: Veure totes les marques
+            - generic [aria-hidden] [ref=e65]: ↗
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: 56 marques i proveïdors
+          - generic [ref=e69]:
+            - button "Marques anteriors" [ref=e70]: ←
+            - button "Marques següents" [ref=e71]: →
+        - region "Carrusel de marques" [ref=e72]:
+          - link "TGT Marca principal" [ref=e73] [cursor=pointer]:
+            - /url: /marques/#categoria-0
+            - generic [ref=e75]:
+              - strong [ref=e76]: TGT
+              - generic [ref=e77]: Marca principal
+            - generic [aria-hidden] [ref=e78]: ↗
+          - link "Friolisa Marca principal" [ref=e79] [cursor=pointer]:
+            - /url: /marques/#categoria-1
+            - generic [ref=e81]:
+              - strong [ref=e82]: Friolisa
+              - generic [ref=e83]: Marca principal
+            - generic [aria-hidden] [ref=e84]: ↗
+          - link "Moritz Marca principal" [ref=e85] [cursor=pointer]:
+            - /url: /marques/#categoria-2
+            - generic [ref=e87]:
+              - strong [ref=e88]: Moritz
+              - generic [ref=e89]: Marca principal
+            - generic [aria-hidden] [ref=e90]: ↗
+          - link "Tros de Sort Formatges" [ref=e91] [cursor=pointer]:
+            - /url: /marques/#categoria-0
+            - generic [ref=e93]:
+              - strong [ref=e94]: Tros de Sort
+              - generic [ref=e95]: Formatges
+            - generic [aria-hidden] [ref=e96]: ↗
+          - link "Formatge Ecològic de Puigcerver Formatges" [ref=e97] [cursor=pointer]:
+            - /url: /marques/#categoria-0
+            - generic [ref=e99]:
+              - strong [ref=e100]: Formatge Ecològic de Puigcerver
+              - generic [ref=e101]: Formatges
+            - generic [aria-hidden] [ref=e102]: ↗
+          - link "Ojos del Guadiana Formatges" [ref=e103] [cursor=pointer]:
+            - /url: /marques/#categoria-0
+            - generic [ref=e105]:
+              - strong [ref=e106]: Ojos del Guadiana
+              - generic [ref=e107]: Formatges
+            - generic [aria-hidden] [ref=e108]: ↗
+          - link "Mariscadora Conserves · Del mar" [ref=e109] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e111]:
+              - strong [ref=e112]: Mariscadora
+              - generic [ref=e113]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e114]: ↗
+          - link "Hoya Conserves · Del mar" [ref=e115] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e117]:
+              - strong [ref=e118]: Hoya
+              - generic [ref=e119]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e120]: ↗
+          - link "Lolín Conserves · Del mar" [ref=e121] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e123]:
+              - strong [ref=e124]: Lolín
+              - generic [ref=e125]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e126]: ↗
+          - link "Pescamar Conserves · Del mar" [ref=e127] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e129]:
+              - strong [ref=e130]: Pescamar
+              - generic [ref=e131]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e132]: ↗
+          - link "Pujadó Solano Conserves · Del mar" [ref=e133] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e135]:
+              - strong [ref=e136]: Pujadó Solano
+              - generic [ref=e137]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e138]: ↗
+          - link "Conservas de Cambados Conserves · Del mar" [ref=e139] [cursor=pointer]:
+            - /url: /marques/#categoria-3
+            - generic [ref=e141]:
+              - strong [ref=e142]: Conservas de Cambados
+              - generic [ref=e143]: Conserves · Del mar
+            - generic [aria-hidden] [ref=e144]: ↗
+          - link "Carretilla Conserves · Vegetals" [ref=e145] [cursor=pointer]:
+            - /url: /marques/#categoria-4
+            - generic [ref=e147]:
+              - strong [ref=e148]: Carretilla
+              - generic [ref=e149]: Conserves · Vegetals
+            - generic [aria-hidden] [ref=e150]: ↗
+          - link "Penelas Conserves · Vegetals" [ref=e151] [cursor=pointer]:
+            - /url: /marques/#categoria-4
+            - generic [ref=e153]:
+              - strong [ref=e154]: Penelas
+              - generic [ref=e155]: Conserves · Vegetals
+            - generic [aria-hidden] [ref=e156]: ↗
+          - link "Helios Conserves · Vegetals" [ref=e157] [cursor=pointer]:
+            - /url: /marques/#categoria-4
+            - generic [ref=e159]:
+              - strong [ref=e160]: Helios
+              - generic [ref=e161]: Conserves · Vegetals
+            - generic [aria-hidden] [ref=e162]: ↗
+          - link "Faroliva Conserves · Vegetals" [ref=e163] [cursor=pointer]:
+            - /url: /marques/#categoria-4
+            - generic [ref=e165]:
+              - strong [ref=e166]: Faroliva
+              - generic [ref=e167]: Conserves · Vegetals
+            - generic [aria-hidden] [ref=e168]: ↗
+          - link "Sarasa Conserves · Vegetals" [ref=e169] [cursor=pointer]:
+            - /url: /marques/#categoria-4
+            - generic [ref=e171]:
+              - strong [ref=e172]: Sarasa
+              - generic [ref=e173]: Conserves · Vegetals
+            - generic [aria-hidden] [ref=e174]: ↗
+          - link "Discarlux Carns i embotits" [ref=e175] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e177]:
+              - strong [ref=e178]: Discarlux
+              - generic [ref=e179]: Carns i embotits
+            - generic [aria-hidden] [ref=e180]: ↗
+          - link "Torrecaza Carns i embotits" [ref=e181] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e183]:
+              - strong [ref=e184]: Torrecaza
+              - generic [ref=e185]: Carns i embotits
+            - generic [aria-hidden] [ref=e186]: ↗
+          - link "Tamaric · Dispocat Carns i embotits" [ref=e187] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e189]:
+              - strong [ref=e190]: Tamaric · Dispocat
+              - generic [ref=e191]: Carns i embotits
+            - generic [aria-hidden] [ref=e192]: ↗
+          - link "Ecològica dels Pirineus Carns i embotits" [ref=e193] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e195]:
+              - strong [ref=e196]: Ecològica dels Pirineus
+              - generic [ref=e197]: Carns i embotits
+            - generic [aria-hidden] [ref=e198]: ↗
+          - link "Carns Bastús Carns i embotits" [ref=e199] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e201]:
+              - strong [ref=e202]: Carns Bastús
+              - generic [ref=e203]: Carns i embotits
+            - generic [aria-hidden] [ref=e204]: ↗
+          - link "Ca d'Antema Carns i embotits" [ref=e205] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e207]:
+              - strong [ref=e208]: Ca d'Antema
+              - generic [ref=e209]: Carns i embotits
+            - generic [aria-hidden] [ref=e210]: ↗
+          - link "Cal Tomàs Carns i embotits" [ref=e211] [cursor=pointer]:
+            - /url: /marques/#categoria-5
+            - generic [ref=e213]:
+              - strong [ref=e214]: Cal Tomàs
+              - generic [ref=e215]: Carns i embotits
+            - generic [aria-hidden] [ref=e216]: ↗
+          - link "Frime Peix" [ref=e217] [cursor=pointer]:
+            - /url: /marques/#categoria-6
+            - generic [ref=e219]:
+              - strong [ref=e220]: Frime
+              - generic [ref=e221]: Peix
+            - generic [aria-hidden] [ref=e222]: ↗
+          - link "Wonder Fish Peix" [ref=e223] [cursor=pointer]:
+            - /url: /marques/#categoria-6
+            - generic [ref=e225]:
+              - strong [ref=e226]: Wonder Fish
+              - generic [ref=e227]: Peix
+            - generic [aria-hidden] [ref=e228]: ↗
+          - link "Benfumat Peix" [ref=e229] [cursor=pointer]:
+            - /url: /marques/#categoria-6
+            - generic [ref=e231]:
+              - strong [ref=e232]: Benfumat
+              - generic [ref=e233]: Peix
+            - generic [aria-hidden] [ref=e234]: ↗
+          - link "Celler de Capçanes Celler" [ref=e235] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e237]:
+              - strong [ref=e238]: Celler de Capçanes
+              - generic [ref=e239]: Celler
+            - generic [aria-hidden] [ref=e240]: ↗
+          - link "Raventós-Basagoiti Celler" [ref=e241] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e243]:
+              - strong [ref=e244]: Raventós-Basagoiti
+              - generic [ref=e245]: Celler
+            - generic [aria-hidden] [ref=e246]: ↗
+          - link "Celler Batea Celler" [ref=e247] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e249]:
+              - strong [ref=e250]: Celler Batea
+              - generic [ref=e251]: Celler
+            - generic [aria-hidden] [ref=e252]: ↗
+          - link "Sumarroca Celler" [ref=e253] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e255]:
+              - strong [ref=e256]: Sumarroca
+              - generic [ref=e257]: Celler
+            - generic [aria-hidden] [ref=e258]: ↗
+          - link "Oro de Castilla Celler" [ref=e259] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e261]:
+              - strong [ref=e262]: Oro de Castilla
+              - generic [ref=e263]: Celler
+            - generic [aria-hidden] [ref=e264]: ↗
+          - link "Bodegas Valdemar Celler" [ref=e265] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e267]:
+              - strong [ref=e268]: Bodegas Valdemar
+              - generic [ref=e269]: Celler
+            - generic [aria-hidden] [ref=e270]: ↗
+          - link "Bodegas Copaboca Celler" [ref=e271] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e273]:
+              - strong [ref=e274]: Bodegas Copaboca
+              - generic [ref=e275]: Celler
+            - generic [aria-hidden] [ref=e276]: ↗
+          - link "Bodegas Briego Celler" [ref=e277] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e279]:
+              - strong [ref=e280]: Bodegas Briego
+              - generic [ref=e281]: Celler
+            - generic [aria-hidden] [ref=e282]: ↗
+          - link "Finca Ca N'Estella Celler" [ref=e283] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e285]:
+              - strong [ref=e286]: Finca Ca N'Estella
+              - generic [ref=e287]: Celler
+            - generic [aria-hidden] [ref=e288]: ↗
+          - link "Vall de Baldomar Celler" [ref=e289] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e291]:
+              - strong [ref=e292]: Vall de Baldomar
+              - generic [ref=e293]: Celler
+            - generic [aria-hidden] [ref=e294]: ↗
+          - link "Crusat Celler" [ref=e295] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e297]:
+              - strong [ref=e298]: Crusat
+              - generic [ref=e299]: Celler
+            - generic [aria-hidden] [ref=e300]: ↗
+          - link "Brot Celler" [ref=e301] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e303]: B
+            - generic [ref=e304]:
+              - strong [ref=e305]: Brot
+              - generic [ref=e306]: Celler
+            - generic [aria-hidden] [ref=e307]: ↗
+          - link "Solana Roivert Celler" [ref=e308] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e310]:
+              - strong [ref=e311]: Solana Roivert
+              - generic [ref=e312]: Celler
+            - generic [aria-hidden] [ref=e313]: ↗
+          - link "Baladin Celler" [ref=e314] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e316]:
+              - strong [ref=e317]: Baladin
+              - generic [ref=e318]: Celler
+            - generic [aria-hidden] [ref=e319]: ↗
+          - link "Urpina Celler" [ref=e320] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e322]:
+              - strong [ref=e323]: Urpina
+              - generic [ref=e324]: Celler
+            - generic [aria-hidden] [ref=e325]: ↗
+          - link "Trabanco Celler" [ref=e326] [cursor=pointer]:
+            - /url: /marques/#categoria-7
+            - generic [ref=e328]:
+              - strong [ref=e329]: Trabanco
+              - generic [ref=e330]: Celler
+            - generic [aria-hidden] [ref=e331]: ↗
+          - link "Sarrate Producte congelat" [ref=e332] [cursor=pointer]:
+            - /url: /marques/#categoria-1
+            - generic [ref=e334]: S
+            - generic [ref=e335]:
+              - strong [ref=e336]: Sarrate
+              - generic [ref=e337]: Producte congelat
+            - generic [aria-hidden] [ref=e338]: ↗
+          - link "La Casa de la Pizza Producte congelat" [ref=e339] [cursor=pointer]:
+            - /url: /marques/#categoria-1
+            - generic [ref=e341]:
+              - strong [ref=e342]: La Casa de la Pizza
+              - generic [ref=e343]: Producte congelat
+            - generic [aria-hidden] [ref=e344]: ↗
+          - link "Berlys Producte congelat" [ref=e345] [cursor=pointer]:
+            - /url: /marques/#categoria-1
+            - generic [ref=e347]:
+              - strong [ref=e348]: Berlys
+              - generic [ref=e349]: Producte congelat
+            - generic [aria-hidden] [ref=e350]: ↗
+          - link "Cafès Batalla Cafès, xocolata i dolços" [ref=e351] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e353]:
+              - strong [ref=e354]: Cafès Batalla
+              - generic [ref=e355]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e356]: ↗
+          - link "Crit d'Or Cafès, xocolata i dolços" [ref=e357] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e359]:
+              - strong [ref=e360]: Crit d'Or
+              - generic [ref=e361]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e362]: ↗
+          - link "Incapto Cafès, xocolata i dolços" [ref=e363] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e365]:
+              - strong [ref=e366]: Incapto
+              - generic [ref=e367]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e368]: ↗
+          - link "Pastisseria Cobo Cafès, xocolata i dolços" [ref=e369] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e371]:
+              - strong [ref=e372]: Pastisseria Cobo
+              - generic [ref=e373]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e374]: ↗
+          - link "La Granja Cafès, xocolata i dolços" [ref=e375] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e377]:
+              - strong [ref=e378]: La Granja
+              - generic [ref=e379]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e380]: ↗
+          - link "Chocovic Cafès, xocolata i dolços" [ref=e381] [cursor=pointer]:
+            - /url: /marques/#categoria-8
+            - generic [ref=e383]:
+              - strong [ref=e384]: Chocovic
+              - generic [ref=e385]: Cafès, xocolata i dolços
+            - generic [aria-hidden] [ref=e386]: ↗
+          - link "Olis Pons Olis i condiments" [ref=e387] [cursor=pointer]:
+            - /url: /marques/#categoria-9
+            - generic [ref=e389]:
+              - strong [ref=e390]: Olis Pons
+              - generic [ref=e391]: Olis i condiments
+            - generic [aria-hidden] [ref=e392]: ↗
+          - link "Salsafran Olis i condiments" [ref=e393] [cursor=pointer]:
+            - /url: /marques/#categoria-9
+            - generic [ref=e395]:
+              - strong [ref=e396]: Salsafran
+              - generic [ref=e397]: Olis i condiments
+            - generic [aria-hidden] [ref=e398]: ↗
+          - link "Millàs Olis i condiments" [ref=e399] [cursor=pointer]:
+            - /url: /marques/#categoria-9
+            - generic [ref=e401]: M
+            - generic [ref=e402]:
+              - strong [ref=e403]: Millàs
+              - generic [ref=e404]: Olis i condiments
+            - generic [aria-hidden] [ref=e405]: ↗
+          - link "Choví Olis i condiments" [ref=e406] [cursor=pointer]:
+            - /url: /marques/#categoria-9
+            - generic [ref=e408]:
+              - strong [ref=e409]: Choví
+              - generic [ref=e410]: Olis i condiments
+            - generic [aria-hidden] [ref=e411]: ↗
+    - generic [ref=e412]:
+      - generic [ref=e413]:
+        - heading "Una mirada al dia a dia." [level=2] [ref=e414]
+        - generic [ref=e415]: La distribució també forma part del producte.
+      - generic [ref=e416]:
+        - figure "El camí també explica com treballem." [ref=e417]:
+          - img "Camió de Poblaliment en ruta al capvespre" [ref=e418]
+        - generic [ref=e420]:
+          - figure [ref=e421]:
+            - img "Camió de Poblaliment en una carretera de muntanya" [ref=e422]
+          - figure [ref=e423]:
+            - img "Espai de distribució de Poblaliment" [ref=e424]
+    - generic [ref=e426]:
+      - heading "Tens una pregunta o una proposta?" [level=2] [ref=e427]
+      - generic [ref=e428]:
+        - paragraph [ref=e429]: Escriu-nos i prepararem el següent pas.
+        - link "Anar a contacte" [ref=e430] [cursor=pointer]:
+          - /url: /contacte/
+          - text: Anar a contacte ↗
+  - contentinfo [ref=e431]:
+    - generic [ref=e432]:
+      - generic [ref=e433]:
+        - link "Producte, origen i criteri." [ref=e434] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=e435]: © Poblaliment · web en construcció
+      - link "Contacte" [ref=e436] [cursor=pointer]:
+        - /url: /contacte/

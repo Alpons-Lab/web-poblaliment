@@ -1,0 +1,72 @@
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - link "Poblaliment, inici" [ref=f7e4] [cursor=pointer]:
+        - /url: /
+        - img "Poblaliment" [ref=f7e5]
+        - generic [ref=f7e6]:
+          - generic [ref=f7e7]: POBLALIMENT
+          - generic [ref=f7e8]: DISTRIBUCIÓ ALIMENTÀRIA
+      - navigation "Navegació principal" [ref=f7e9]:
+        - link "Inici" [ref=f7e10] [cursor=pointer]:
+          - /url: /
+        - link "Nosaltres" [ref=f7e11] [cursor=pointer]:
+          - /url: /nosaltres
+        - link "Les nostres marques" [ref=f7e12] [cursor=pointer]:
+          - /url: /marques
+        - link "Contacte" [ref=f7e13] [cursor=pointer]:
+          - /url: /contacte
+      - generic "Idioma" [ref=f7e14]:
+        - generic [ref=f7e15]: CA
+        - generic [ref=f7e16]: /
+        - link "ES" [ref=f7e17] [cursor=pointer]:
+          - /url: /es/contacto
+  - main [ref=f7e18]:
+    - generic [ref=f7e20]:
+      - generic [ref=f7e21]:
+        - heading "Obrim una conversa." [level=1] [ref=f7e22]
+        - paragraph [ref=f7e23]: Aquest formulari és el punt de partida per a una futura connexió. Quan tinguem les dades definitives, aquest espai ja estarà preparat per rebre-les.
+      - figure "Quan hi ha camí, també hi ha una manera de començar." [ref=f7e25]:
+        - img "Vehicle de distribució davant de les muntanyes" [ref=f7e26]
+    - generic [ref=f7e28]:
+      - generic [ref=f7e29]:
+        - heading "Escriu-nos" [level=2] [ref=f7e30]
+        - paragraph [ref=f7e31]: Formulari de scaffolding · connexió pendent de configurar
+        - generic [ref=f7e32]:
+          - generic [ref=f7e33]:
+            - text: Nom
+            - textbox "Nom" [ref=f7e34]:
+              - /placeholder: ""
+          - generic [ref=f7e35]:
+            - text: Correu electrònic
+            - textbox "Correu electrònic" [ref=f7e36]:
+              - /placeholder: ""
+          - generic [ref=f7e37]:
+            - text: Missatge
+            - textbox "Missatge" [ref=f7e38]
+          - button "Enviar missatge" [ref=f7e39]: Enviar missatge ↗
+      - complementary [ref=f7e40]:
+        - heading "Dades a completar" [level=2] [ref=f7e41]
+        - generic [ref=f7e42]:
+          - generic [ref=f7e43]:
+            - term [ref=f7e44]: Correu
+            - definition [ref=f7e45]: pendent de confirmar
+          - generic [ref=f7e46]:
+            - term [ref=f7e47]: Telèfon
+            - definition [ref=f7e48]: pendent de confirmar
+          - generic [ref=f7e49]:
+            - term [ref=f7e50]: Ubicació
+            - definition [ref=f7e51]: Poblaliment · Catalunya
+  - contentinfo [ref=f7e52]:
+    - generic [ref=f7e53]:
+      - generic [ref=f7e54]:
+        - link "Producte, origen i criteri." [ref=f7e55] [cursor=pointer]:
+          - /url: /
+        - paragraph [ref=f7e56]: © Poblaliment · web en construcció
+      - link "Contacte" [ref=f7e57] [cursor=pointer]:
+        - /url: /contacte
+  - generic [ref=f7e60]:
+    - button [ref=f7e61]
+    - button [ref=f7e67]
+    - button [ref=f7e71]
+    - button [ref=f7e76]

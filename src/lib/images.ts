@@ -1,0 +1,14 @@
+export const imageDimensions: Record<string, { width: number; height: number }> = {
+  '/images/about.jpg': { width: 1440, height: 809 },
+  '/images/contact.jpg': { width: 1600, height: 1200 },
+  '/images/hero.jpg': { width: 1080, height: 1080 },
+  '/images/logo.jpg': { width: 786, height: 786 },
+  '/images/moritz.jpg': { width: 1024, height: 768 },
+  '/images/muntanya.jpg': { width: 960, height: 1200 },
+  '/images/pigal.jpg': { width: 903, height: 1155 },
+  '/images/products.jpg': { width: 1024, height: 768 },
+  '/images/sumarroca.jpg': { width: 957, height: 556 },
+  '/images/truck-snow.jpg': { width: 1440, height: 1081 },
+  '/images/truck-sunset.jpg': { width: 1080, height: 1080 },
+  '/images/warehouse.jpg': { width: 1440, height: 1268 },
+};

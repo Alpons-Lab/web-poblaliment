@@ -1,0 +1,17 @@
+[     326ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[   82773ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[   97743ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[  113761ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[  119932ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[  481554ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[  486576ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=128df439:15804
+[  491308ms] [LOG] [vite] server connection lost. Polling for restart... @ http://[::1]:4321/@vite/client:1815
+[  495179ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://[::1]:4321/node_modules/.vite/deps/client-D7iE-1iw.js?v=035ce283:15804
+[  555296ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://[::1]:4321/images/logo.jpg:0
+[  555296ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://[::1]:4321/images/contact.jpg:0
+[  555301ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://[::1]:4321/@id/astro/runtime/client/dev-toolbar/entrypoint.js:0
+[  555301ms] [ERROR] Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED @ http://[::1]:4321/@id/astro:scripts/before-hydration.js:0
+[  555302ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://[::1]:4321/src/styles/global.css:0
+[  555305ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://[::1]:4321/node_modules/.pnpm/vite@8.3.3_esbuild@0.28.2_jiti@2.7.0_yaml@2.9.1/node_modules/vite/dist/client/env.mjs:0
+[  555311ms] Failed to fetch dynamically imported module: http://[::1]:4321/@id/astro:scripts/before-hydration.js
+[  555319ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://[::1]:4321/images/logo.jpg:0
